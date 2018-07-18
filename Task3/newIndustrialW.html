@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/Style.css">
+    <title>Рабочий индустриалного предприятия</title>
+</head>
+<body class="wrap">
+    <div class="workerForm">
+        <form autocomplete="off">
+            <div class="form">
+                <p class="headText">Новый работник:</p>
+                <label>Имя</label>
+                <input id="FirstName" name="fName" type="text" autofocus  required/><br/>
+            </div>
+            <div class="form">
+                <label>Фамилия</label>
+                <input id="SecondName" name="sName" type="text" required/><br/>
+            </div>
+            <div class="form">
+                <label>Возраст</label>
+                <input id="Age" name="age" type="text" required/><br/>
+            </div>
+            <div class="form">
+                <div>
+                    <label>Пол</label>
+                    <div class="sex">
+                        <label >Женский</label>
+                        <input name="gender" type="radio" value="женский" required/><br/>
+                        <label>Мужской</label>
+                        <input name="gender" type="radio" value="мужской"/><br/>
+                    </div>
+                </div>
+            </div>
+            <div class="form">
+                <label>Должность</label>
+                <input name="post" type="text" required/><br/>
+            </div>
+            <div class="form">
+                <label>Компния</label>
+                <input name="company" type="text" required/><br/>
+            </div>
+            <div class="form">
+                <label>Табельный №</label>
+                <input name="personalNumber" type="text" required/><br/>
+            </div>
+            <div class="form">
+                <label>Отдел/Цех</label>
+                <input name="department" type="text" required/><br/>
+            </div>
+            <div class="form">
+                <!--<input type="submit" class="button" value="Сохранить"/>-->
+                <button class="button" onclick="SaveW()">Сохранить</button>
+                <button class="button" onclick="ClearW()">Очистить</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
+

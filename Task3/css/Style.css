@@ -1,0 +1,84 @@
+/*-------------------------------Common style------------------------------------*/
+.wrap{
+    font-family: Arial, sans-serif ;
+}
+td{
+    background: cornsilk;
+    min-width: 100px;
+    border: 1px solid#800000;
+}
+.worker{
+    margin: 5px;
+    border: 5px solid#111111;
+
+}
+.create{
+    margin: 5px;
+}
+
+.button{
+    color: #ffffff;
+    font-size: medium;
+    background-color: #111111;
+    border-radius: 4px;
+    border-color: #800000;
+    cursor: pointer;
+    margin: 5px 5px 5px 5px;
+}
+.headText{
+    font-size: x-large;
+    font-weight: bold;
+}
+.wrapForm{
+    width: 290px;
+}
+
+/*---------------------------------for create.html------------------------------*/
+.buttonsNewWorker{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/*---------------------------------for newIndustrialW.html------------------------------*/
+.workerForm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.form {
+    padding-top: 10px;
+}
+
+.form .button{
+    margin: 5px 5px 5px 0px;
+}
+
+.sex{
+    display: flex;
+    float: right;
+}
+
+input{
+    float: right;
+}
+
+
+
+/*---------------------------------for newTransportW.html------------------------------*/
+
+.category{
+    display: flex;
+    align-items: last-baseline;
+}
+.categoryBox{
+    display: flex;
+    margin: auto;
+
+
+}
+.itemBox{
+    margin: 0px 10px 10px 0px;
+}

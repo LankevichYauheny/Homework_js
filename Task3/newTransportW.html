@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/Style.css">
+    <title>Рабочий транспортного предприятия</title>
+</head>
+<body class="wrap">
+<div class="workerForm">
+    <form autocomplete="off" class="wrapForm">
+        <div class="form">
+            <p class="headText">Новый работник:</p>
+            <label>Имя</label>
+            <input id="FirstName" name="fName" type="text" autofocus  required/><br/>
+        </div>
+        <div class="form">
+            <label>Фамилия</label>
+            <input id="SecondName" name="sName" type="text" required/><br/>
+        </div>
+        <div class="form">
+            <label>Возраст</label>
+            <input id="Age" name="age" type="text" required/><br/>
+        </div>
+        <div class="form">
+            <div>
+                <label>Пол</label>
+                <div class="sex">
+                    <label >Женский</label>
+                    <input name="gender" type="radio" value="женский" required/><br/>
+                    <label>Мужской</label>
+                    <input name="gender" type="radio" value="мужской"/><br/>
+                </div>
+            </div>
+        </div>
+        <div class="form">
+            <label>Должность</label>
+            <input name="post" type="text" required/><br/>
+        </div>
+        <div class="form">
+            <label>Компния</label>
+            <input name="company" type="text" required/><br/>
+        </div>
+        <div class="form">
+            <div class="category">
+                <label>Вод. категории </label>
+                <div class="categoryBox">
+                    <div class="itemBox">
+                        <label>A</label><br/>
+                        <input name="categoryA" type="checkbox" value="A"/>
+                    </div>
+                    <div class="itemBox">
+                        <label>B</label><br/>
+                        <input name="categoryB" type="checkbox" value="B"/>
+                    </div>
+                    <div class="itemBox">
+                        <label>C</label><br/>
+                        <input name="categoryC" type="checkbox" value="C"/>
+                    </div>
+                    <div class="itemBox">
+                        <label>D</label><br/>
+                        <input name="categoryD" type="checkbox" value="D" />
+                    </div>
+                    <div class="itemBox">
+                        <label>E</label><br/>
+                        <input name="categoryE" type="checkbox" value="E"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <label>Стаж</label>
+            <input name="lengthOfWork" type="text" required/><br/>
+        </div>
+        <div class="form">
+            <!--<input type="submit" class="button" value="Сохранить"/>-->
+            <button class="button" onclick="SaveT()">Сохранить</button>
+            <button class="button" onclick="ClearT()">Очистить</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
