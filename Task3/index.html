@@ -5,55 +5,10 @@
     <title>Homework2</title>
     <link rel="stylesheet" type="text/css" href="css/Style.css">
 </head>
-<body class="wrap">
-<section>
-    <div class="table">
-        <button class="button"  onclick="Create()">Создать</button>
-        <table class="worker">
-            <tr>
-                <td></td>
-                <td>Имя</td>
-                <td>Фамилия</td>
-                <td>Возраст</td>
-                <td>Пол</td>
-                <td>Должность</td>
-                <td>Компания</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>
-                    <button class="button" onclick="FullInfo()">Подробно</button>
-                </td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>
-                    <button class="button" onclick="Edit()">Редактировать</button>
-                    <button class="button" onclick="Delete()">Удалить</button>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <button class="button" onclick="FullInfo()">Подробно</button>
-                </td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>
-                    <button class="button" onclick="Edit()">Редактировать</button>
-                    <button class="button" onclick="Delete()">Удалить</button>
-                </td>
-            </tr>
-        </table>
-    </div>
+<body onload="createMainTable()" class="wrap">
+<section id="main">
+    <div id="TBL"></div>
 </section>
-
 <script src="js/main.js"></script>
 </body>
 </html>

@@ -7,10 +7,14 @@ td{
     min-width: 100px;
     border: 1px solid#800000;
 }
-.worker{
+table{
     margin: 5px;
     border: 5px solid#111111;
-
+    border-collapse: collapse;
+    text-align: center;
+}
+.headerTable{
+    font-weight: bold;
 }
 .create{
     margin: 5px;
@@ -41,7 +45,7 @@ td{
 
 }
 
-/*---------------------------------for newIndustrialW.html------------------------------*/
+/*---------------------------------for new-industrial.html------------------------------*/
 .workerForm{
     display: flex;
     align-items: center;
@@ -67,7 +71,7 @@ input{
 
 
 
-/*---------------------------------for newTransportW.html------------------------------*/
+/*---------------------------------for new-transport.html------------------------------*/
 
 .category{
     display: flex;

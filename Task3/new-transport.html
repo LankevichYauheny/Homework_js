@@ -7,7 +7,7 @@
 </head>
 <body class="wrap">
 <div class="workerForm">
-    <form autocomplete="off" class="wrapForm">
+    <form autocomplete="on" class="wrapForm">
         <div class="form">
             <p class="headText">Новый работник:</p>
             <label>Имя</label>
@@ -34,11 +34,11 @@
         </div>
         <div class="form">
             <label>Должность</label>
-            <input name="post" type="text" required/><br/>
+            <input id="Post" name="post" type="text" required/><br/>
         </div>
         <div class="form">
             <label>Компния</label>
-            <input name="company" type="text" required/><br/>
+            <input id="Company" name="company" type="text" required/><br/>
         </div>
         <div class="form">
             <div class="category">
@@ -46,30 +46,30 @@
                 <div class="categoryBox">
                     <div class="itemBox">
                         <label>A</label><br/>
-                        <input name="categoryA" type="checkbox" value="A"/>
+                        <input name="category" type="checkbox" value="A"/>
                     </div>
                     <div class="itemBox">
                         <label>B</label><br/>
-                        <input name="categoryB" type="checkbox" value="B"/>
+                        <input name="category" type="checkbox" value="B"/>
                     </div>
                     <div class="itemBox">
                         <label>C</label><br/>
-                        <input name="categoryC" type="checkbox" value="C"/>
+                        <input name="category" type="checkbox" value="C"/>
                     </div>
                     <div class="itemBox">
                         <label>D</label><br/>
-                        <input name="categoryD" type="checkbox" value="D" />
+                        <input name="category" type="checkbox" value="D" />
                     </div>
                     <div class="itemBox">
                         <label>E</label><br/>
-                        <input name="categoryE" type="checkbox" value="E"/>
+                        <input name="category" type="checkbox" value="E"/>
                     </div>
                 </div>
             </div>
         </div>
         <div>
             <label>Стаж</label>
-            <input name="lengthOfWork" type="text" required/><br/>
+            <input id="LengthOfWork" name="lengthOfWork" type="text" required/><br/>
         </div>
         <div class="form">
             <!--<input type="submit" class="button" value="Сохранить"/>-->
@@ -78,6 +78,6 @@
         </div>
     </form>
 </div>
-
+<script src="js/main.js"></script>
 </body>
 </html>

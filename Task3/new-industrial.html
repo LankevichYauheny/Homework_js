@@ -7,7 +7,7 @@
 </head>
 <body class="wrap">
     <div class="workerForm">
-        <form autocomplete="off">
+        <form autocomplete="on">
             <div class="form">
                 <p class="headText">Новый работник:</p>
                 <label>Имя</label>
@@ -24,7 +24,7 @@
             <div class="form">
                 <div>
                     <label>Пол</label>
-                    <div class="sex">
+                    <div class="sex" >
                         <label >Женский</label>
                         <input name="gender" type="radio" value="женский" required/><br/>
                         <label>Мужской</label>
@@ -34,19 +34,19 @@
             </div>
             <div class="form">
                 <label>Должность</label>
-                <input name="post" type="text" required/><br/>
+                <input id="Post" name="post" type="text" required/><br/>
             </div>
             <div class="form">
                 <label>Компния</label>
-                <input name="company" type="text" required/><br/>
+                <input id="Company" name="company" type="text" required/><br/>
             </div>
             <div class="form">
                 <label>Табельный №</label>
-                <input name="personalNumber" type="text" required/><br/>
+                <input id="PersonalNumber" name="personalNumber" type="text" required/><br/>
             </div>
             <div class="form">
                 <label>Отдел/Цех</label>
-                <input name="department" type="text" required/><br/>
+                <input id="Department" name="department" type="text" required /><br/>
             </div>
             <div class="form">
                 <!--<input type="submit" class="button" value="Сохранить"/>-->
@@ -55,7 +55,7 @@
             </div>
         </form>
     </div>
-
+<script src="js/main.js"></script>
 </body>
 </html>
 
