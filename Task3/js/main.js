@@ -115,7 +115,6 @@ function createMainTable() {
     var table = document.createElement("TABLE"); // Создаём таблицу
     for(var y = 0; y <= WorkersArray.length; y++) {
         var tr = document.createElement("TR"); // Создаём строки
-        table.appendChild(tr);
         // Создаём колонки
         for (var x = 0; x < 8; x++) {
             var td = document.createElement("TD");
@@ -154,6 +153,8 @@ function createMainTable() {
                     case 0: {
                         var btnFullInfo = document.createElement("BUTTON");
                         btnFullInfo.setAttribute("class", "button");
+                        btnFullInfo.setAttribute("value", worker.id);
+                        btnFullInfo.setAttribute("onclick", "openWindow()");
                         var t2 = document.createTextNode("Подробно");
                         btnFullInfo.appendChild(t2);
                         td.appendChild(btnFullInfo);
@@ -196,7 +197,8 @@ function createMainTable() {
                     } break;
                 }
             }
-            table.appendChild(td);
+            tr.appendChild(td);
+            table.appendChild(tr);
         }
         divTBL.appendChild(table);
     }
@@ -303,3 +305,19 @@ function ClearT() {
     alert("Данная функциональность не реализована!");
 }
 
+/*---------------------------modalWindow-----------------------------------------------*/
+
+var modalWindow = document.getElementById("modalWindow"); // Получаем текущее окно
+var tableFullInfo = document.createElement("TABLE");
+var backModalWindow = document.createElement("DIV"); // Создаём новый div
+function kill() {
+    modalWindow.style.top = "-100%"; // Прячем модальное окно из зоны видимости
+    backModalWindow.remove(); // Удаляем ранее созданный div
+}
+function openWindow() {
+    backModalWindow.setAttribute("id", "backModalWindow"); // Назначаем класс для backModalWindow
+    document.body.appendChild(backModalWindow);
+    var height = modalWindow.offsetHeight; // Получаем высоту модального окна
+    modalWindow.style.top = "50%";
+    backModalWindow.setAttribute("onclick", "kill()");
+}
