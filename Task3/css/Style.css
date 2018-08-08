@@ -96,10 +96,10 @@ input{
 /*--------------------------for modalWindow---------------------*/
 #modalWindow{
     position: absolute;
-    width: 300px;
+    width: auto;
     left: 30%;
     top: -100px;
-    padding: 20px;
+    padding: 0px;
     background: #696969;
     border: 1px solid #111111;
     z-index: 9999;
