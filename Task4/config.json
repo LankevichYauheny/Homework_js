@@ -1,0 +1,85 @@
+{
+	"type": "Collection",
+	"properties": {
+		"FirstName": {
+			"name": "FirstName",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "FirstName",
+			"order": 0
+		},
+		"SecondName": {
+			"name": "SecondName",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "SecondName",
+			"order": 1
+		},
+		"Age": {
+			"name": "Age",
+			"type": "number",
+			"typeLabel": "number",
+			"required": false,
+			"id": "Age",
+			"order": 2
+		},
+		"Gender": {
+			"name": "Gender",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "Gender",
+			"order": 3
+		},
+		"Post": {
+			"name": "Post",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "Post",
+			"order": 4
+		},
+		"Company": {
+			"name": "Company",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "Company",
+			"order": 5
+		},
+		"PersonnelNumber": {
+			"name": "PersonnelNumber",
+			"type": "number",
+			"typeLabel": "number",
+			"required": false,
+			"id": "PersonnelNumber",
+			"order": 6
+		},
+		"Department": {
+			"name": "Department",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "Department",
+			"order": 7
+		},
+		"DrivingCategories": {
+			"name": "DrivingCategories",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "DrivingCategories",
+			"order": 8
+		},
+		"LengthOfWork": {
+			"name": "LengthOfWork",
+			"type": "number",
+			"typeLabel": "number",
+			"required": false,
+			"id": "LengthOfWork",
+			"order": 9
+		}
+	}
+}
